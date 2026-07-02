@@ -88,6 +88,9 @@ MonoBehaviour:
     - name: Blur
       pathPrefix: Spawn
       guid: e466d9326b30a4b49a3dad428b4d9968
+    - name: inwiseman
+      pathPrefix: Spawn
+      guid: 2a9eb6b4e7cfde641b494adaa95280e7
   - Id: UI
     Resources:
     - name: ClickThroughPanel
@@ -149,6 +152,12 @@ MonoBehaviour:
     - name: prologue
       pathPrefix: Scripts
       guid: 4c4a6f34da18e874da0c34359299e2c0
+    - name: NewScript
+      pathPrefix: Scripts
+      guid: aaa8cb8a0dd43714db3be84e898c5e01
+    - name: LocationStreet
+      pathPrefix: Scripts
+      guid: 2d9e9a753ae195046acade15841f42f3
   - Id: Characters/98b33aad-0ece-4662-9962-44bfdaa9a05f
     Resources:
     - name: Gemini_Generated_Image_184k9p184k9p184k-removebg-preview
@@ -173,3 +182,8 @@ MonoBehaviour:
       guid: 7d0ae511950eae54ab811b7fe711d859
   - Id: Movies
     Resources: []
+  - Id: ChoiceHandlers/a7e79ff6-5826-4bd5-bc6c-99c2af326d6a
+    Resources:
+    - name: WiseManInteractableArea
+      pathPrefix: ChoiceHandlers
+      guid: c16e1d3990e56a0428f7d618780b56c1
