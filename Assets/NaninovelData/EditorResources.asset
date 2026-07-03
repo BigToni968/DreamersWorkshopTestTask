@@ -94,6 +94,12 @@ MonoBehaviour:
     - name: navigation
       pathPrefix: Spawn
       guid: a4b3a59fe0e870949bd6c79aa036e676
+    - name: table
+      pathPrefix: Spawn
+      guid: 69d69004c3a586a4795b4c1034de75bb
+    - name: safe
+      pathPrefix: Spawn
+      guid: 5117bd9eea0ab9e4194e66df8aa130b1
   - Id: UI
     Resources:
     - name: ClickThroughPanel
@@ -164,27 +170,24 @@ MonoBehaviour:
     - name: LocationCastleHall
       pathPrefix: Scripts
       guid: a50185bd01d345a469f94c6e44db4f06
+    - name: altar
+      pathPrefix: Scripts
+      guid: 5a96bcc9fddf0c941a27ec017a3b022c
   - Id: Characters/98b33aad-0ece-4662-9962-44bfdaa9a05f
     Resources:
     - name: Gemini_Generated_Image_184k9p184k9p184k-removebg-preview
       pathPrefix: Characters/wise_man
       guid: fd13adf2e3f69854d87444f2b516dac9
   - Id: Backgrounds/71e69307-1eed-4c6f-97c2-c317cef69a90
-    Resources: []
-  - Id: Backgrounds/702cd90c-52da-4883-a1fd-0727b7bd1c6c
     Resources:
-    - name: Gemini_Generated_Image_hb166bhb166bhb16
-      pathPrefix: Backgrounds/village
+    - name: village
+      pathPrefix: Backgrounds/MainBackground
       guid: d0e108db294eca54f9853289df0f8166
-  - Id: Backgrounds/eb69009c-6fbd-4b79-9b20-0be6d1c236c6
-    Resources:
-    - name: Gemini_Generated_Image_9nnpd59nnpd59nnp
-      pathPrefix: Backgrounds/castle_hall
+    - name: castle_hall
+      pathPrefix: Backgrounds/MainBackground
       guid: 06f4432b82cbaa3419d98082d68c4a78
-  - Id: Backgrounds/64f4d683-0e05-4322-84d1-53f728bc0b79
-    Resources:
-    - name: Gemini_Generated_Image_775qhl775qhl775q
-      pathPrefix: Backgrounds/altar
+    - name: altar
+      pathPrefix: Backgrounds/MainBackground
       guid: 7d0ae511950eae54ab811b7fe711d859
   - Id: Movies
     Resources: []

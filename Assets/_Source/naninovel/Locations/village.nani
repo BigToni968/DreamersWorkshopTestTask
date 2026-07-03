@@ -1,4 +1,6 @@
+@despawn table
 @back village
+@despawn safe
 @set CurentLocation="village"
 @spawn inwiseman
 @spawn navigation

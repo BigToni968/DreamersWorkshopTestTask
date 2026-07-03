@@ -1,4 +1,10 @@
 @despawn inwiseman
-@back castle_hall
 @set CurentLocation="castle_hall"
+@spawn table
+@spawn safe
+@back castle_hall
+@stop
+# player
+Хм... Видимо мне надо найти ключ.
+@hidePrinter 
 @stop

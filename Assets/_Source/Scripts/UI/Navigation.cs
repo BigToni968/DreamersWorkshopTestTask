@@ -17,6 +17,7 @@ namespace TestTask.UI
         private string _curentLocation;
         private IScriptPlayer _script;
         private Dictionary<int, int> _sides;
+        private const string CUSTOM_VARIABLE = "CurentLocation";
 
         private void Start()
         {
@@ -38,7 +39,7 @@ namespace TestTask.UI
 
         private void CheckSides()
         {
-            _curentLocation = _variables.GetVariableValue("CurentLocation"); 
+            _curentLocation = _variables.GetVariableValue(CUSTOM_VARIABLE); 
             left.gameObject.SetActive(leftData.IsShowSide(_curentLocation,out var index));
             _sides[left.name.GetHashCode()] = index;
             right.gameObject.SetActive(rightData.IsShowSide(_curentLocation,out index));
@@ -47,7 +48,7 @@ namespace TestTask.UI
         
         private void HandleVariableUpdated(CustomVariableUpdatedArgs args)
         {
-            if (args.Name.GetHashCode() == "CurentLocation".GetHashCode())
+            if (args.Name.GetHashCode() == CUSTOM_VARIABLE.GetHashCode())
                 CheckSides();
         }
 

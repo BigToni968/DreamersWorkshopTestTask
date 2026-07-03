@@ -15,11 +15,13 @@ MonoBehaviour:
   PredefinedVariables:
   - name: PlayerHasKey
     value: false
-  - name: WiseManHasKey
+  - name: WiseManHasNecklace
     value: false
   - name: PlayerHasNecklace
     value: false
   - name: VisitedLocation
     value: false
   - name: CurentLocation
-    value: null
+    value: false
+  - name: SafeOpened
+    value: false
