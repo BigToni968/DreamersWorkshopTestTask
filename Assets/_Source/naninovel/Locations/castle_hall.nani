@@ -1,0 +1,4 @@
+@despawn inwiseman
+@back castle_hall
+@set CurentLocation="castle_hall"
+@stop

@@ -1,5 +1,7 @@
-@back  id:village
+@back village
+@set CurentLocation="village"
 @spawn inwiseman
+@spawn navigation
 @hidePrinter 
 @stop
 # wise_man

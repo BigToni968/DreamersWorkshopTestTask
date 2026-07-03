@@ -91,6 +91,9 @@ MonoBehaviour:
     - name: inwiseman
       pathPrefix: Spawn
       guid: 2a9eb6b4e7cfde641b494adaa95280e7
+    - name: navigation
+      pathPrefix: Spawn
+      guid: a4b3a59fe0e870949bd6c79aa036e676
   - Id: UI
     Resources:
     - name: ClickThroughPanel
@@ -158,6 +161,9 @@ MonoBehaviour:
     - name: LocationStreet
       pathPrefix: Scripts
       guid: 2d9e9a753ae195046acade15841f42f3
+    - name: LocationCastleHall
+      pathPrefix: Scripts
+      guid: a50185bd01d345a469f94c6e44db4f06
   - Id: Characters/98b33aad-0ece-4662-9962-44bfdaa9a05f
     Resources:
     - name: Gemini_Generated_Image_184k9p184k9p184k-removebg-preview
@@ -182,8 +188,3 @@ MonoBehaviour:
       guid: 7d0ae511950eae54ab811b7fe711d859
   - Id: Movies
     Resources: []
-  - Id: ChoiceHandlers/a7e79ff6-5826-4bd5-bc6c-99c2af326d6a
-    Resources:
-    - name: WiseManInteractableArea
-      pathPrefix: ChoiceHandlers
-      guid: c16e1d3990e56a0428f7d618780b56c1

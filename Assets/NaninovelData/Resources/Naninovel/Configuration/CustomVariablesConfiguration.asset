@@ -21,3 +21,5 @@ MonoBehaviour:
     value: false
   - name: VisitedLocation
     value: false
+  - name: CurentLocation
+    value: null
