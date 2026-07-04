@@ -59,6 +59,7 @@ namespace TestTask.UI
                 safeImage.sprite = data.SafeOpen;
                 _necklace = Instantiate(data.NecklacePrefab, necklacePoint);
                 _necklace.onClick.AddListener(TakeNecklace);
+                _script.PreloadAndPlayAsync(data.NameScript, data.NameLabelKey);
             }
             else if (!_isOpen && !hasKey)
             {
@@ -72,6 +73,7 @@ namespace TestTask.UI
             Destroy(_necklace.gameObject);
             _playerHasNecklace = true;
             _variables.SetVariableValue(data.CustomVarPlayer,_playerHasNecklace.ToString());
+            _script.PreloadAndPlayAsync(data.NameScript, data.NameLabelNecklace);
         }
     }
 }

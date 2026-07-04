@@ -1,20 +1,23 @@
+@despawn safe
 @despawn table
 @back village
-@despawn safe
 @set CurentLocation="village"
 @spawn inwiseman
 @spawn navigation
+@spawn inventory
 @hidePrinter 
 @stop
 # wise_man
-@if ((!PlayerHasKey)&&(!VisitedLocation))
+@if ((!PlayerHasKey)&&(!VisitedLocation)&&(!PlayerHasNecklace))
 wise_man: Если ищешь способ как открыть сейф, то ищи вход в алтарь.
-@endIf
+@elseIf ((!PlayerHasKey)&&(VisitedLocation)&&(!PlayerHasNecklace))
+wise_man: Так если нашёл алтарь, то не стой столбом, забирай ключ и тащи мне ожерелье.
 @elseIf ((PlayerHasKey)&&(!PlayerHasNecklace))
 wise_man: Так если у тебя есть ключ, то поторопись и принеси мне ожерелье!
-@endIf
 @elseIf PlayerHasNecklace
-@set (PlayerHasNecklace=false)
+@set WiseManHasNecklace="true"
+@set PlayerHasNecklace="false"
+@inv Item:empty
 wise_man: Отлично! Теперь ожерелье у меня!
 Ответы на все твои вопросы...
 Ты игровой персонаж созданый одним разрабочтиком для исполнения тестового задания.

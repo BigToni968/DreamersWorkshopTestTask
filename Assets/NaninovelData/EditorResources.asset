@@ -100,6 +100,15 @@ MonoBehaviour:
     - name: safe
       pathPrefix: Spawn
       guid: 5117bd9eea0ab9e4194e66df8aa130b1
+    - name: minigame
+      pathPrefix: Spawn
+      guid: 83e09d6f7ae14be418fb2ce37186aa49
+    - name: key
+      pathPrefix: Spawn
+      guid: 41160dfea4553784888361ea2cbb34a1
+    - name: inventory
+      pathPrefix: Spawn
+      guid: 924886b2d00c1e143b91d6a8dbf395e0
   - Id: UI
     Resources:
     - name: ClickThroughPanel
@@ -173,6 +182,9 @@ MonoBehaviour:
     - name: altar
       pathPrefix: Scripts
       guid: 5a96bcc9fddf0c941a27ec017a3b022c
+    - name: finish
+      pathPrefix: Scripts
+      guid: 5389e07bcbf54424db13f822fa7065ae
   - Id: Characters/98b33aad-0ece-4662-9962-44bfdaa9a05f
     Resources:
     - name: Gemini_Generated_Image_184k9p184k9p184k-removebg-preview
@@ -190,4 +202,6 @@ MonoBehaviour:
       pathPrefix: Backgrounds/MainBackground
       guid: 7d0ae511950eae54ab811b7fe711d859
   - Id: Movies
+    Resources: []
+  - Id: Audio
     Resources: []

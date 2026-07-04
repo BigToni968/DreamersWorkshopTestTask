@@ -20,11 +20,10 @@ namespace TestTask.UI
             self.onClick.RemoveListener(Click);
         }
 
-        private async void Click()
+        private void Click()
         {
-            var script = Engine.GetService<IScriptPlayer>();
-
-            await script.PreloadAndPlayAsync(data.NameScript, data.NameLabel);
+            var script = Engine.GetService<IScriptPlayer>(); 
+            script.PreloadAndPlayAsync(data.NameScript, data.NameLabel);
         }
     }
 }

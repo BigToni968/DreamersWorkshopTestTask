@@ -1,0 +1,33 @@
+
+@despawn table
+@despawn safe
+@set CurentLocation="altar"
+@set VisitedLocation="true"
+@back altar
+@if ((!SafeOpened)&&(!PlayerHasKey))
+@spawn key
+@endIf
+@hidePrinter 
+@stop
+# startGame
+@minigame start
+@stop
+# minigameWin
+@despawn key
+@inv Item:key
+@minigame finish
+@set PlayerHasKey="true"
+Лёгкая победа. Ключ теперь у меня.
+@hidePrinter 
+@stop
+# minigameLose
+@minigame finish
+Не сейчас. Попробую потом ещё раз.
+@hidePrinter 
+@stop
+# minigameTie
+@minigame finish
+Было близко... Эх.. В следующий раз повезёт.
+@hidePrinter 
+@goto finish
+@stop

@@ -15,5 +15,7 @@ namespace TestTask.ReadOnly
         [field: SerializeField] public string CustomVarWiseMan { get; private set; } = "WiseManHasNecklace";
         [field: SerializeField] public string NameScript { get; private set; } = "castle_hall";
         [field: SerializeField] public string NameLabel { get; private set; } = "player";
+        [field: SerializeField] public string NameLabelKey { get; private set; } = "useKey";
+        [field: SerializeField] public string NameLabelNecklace { get; private set; } = "takeItem";
     }
 }

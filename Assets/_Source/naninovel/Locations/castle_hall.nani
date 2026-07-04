@@ -1,4 +1,5 @@
 @despawn inwiseman
+@despawn key
 @set CurentLocation="castle_hall"
 @spawn table
 @spawn safe
@@ -6,5 +7,17 @@
 @stop
 # player
 Хм... Видимо мне надо найти ключ.
+@hidePrinter 
+@stop
+
+# useKey
+@inv Item:empty
+Ожерелье можно забрать уже.
+@hidePrinter 
+@stop
+# takeItem
+@set PlayerHasNecklace="true"
+@inv Item:necklace
+Ожерелье которое хотел старик у меня. Можно возвращатся.
 @hidePrinter 
 @stop
