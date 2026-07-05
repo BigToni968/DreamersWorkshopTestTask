@@ -38,12 +38,11 @@ namespace TestTask
             Hide();
         }
 
-        public void Show()
+        public async void Show()
         {
-            var task = _spawner.SpawnAsync(MINIGAME_PREFAB_NAME);
-            if (!task.IsCompleted)
-                return;
-            task.Result.GameObject.TryGetComponent(out _minigame);
+            var task = await _spawner.SpawnAsync(MINIGAME_PREFAB_NAME);
+            task.GameObject.TryGetComponent(out _minigame);
+            _minigame.Init(this);
             _emptyCell = _minigame.Size.x * _minigame.Size.y;
             _cells = new char[_minigame.Size.y, _minigame.Size.x];
         }

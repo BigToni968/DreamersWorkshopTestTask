@@ -16,14 +16,35 @@ MonoBehaviour:
   - scriptName: Prologue
     position:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 157
+      x: -63
+      y: -50
+      width: 111
       height: 101
-  - scriptName: LocationVillage
+  - scriptName: village
     position:
       serializedVersion: 2
-      x: 237
-      y: 24
-      width: 133
+      x: 85
+      y: -29
+      width: 98
       height: 101
+  - scriptName: castle_hall
+    position:
+      serializedVersion: 2
+      x: 221
+      y: -46
+      width: 105
+      height: 149
+  - scriptName: altar
+    position:
+      serializedVersion: 2
+      x: 406
+      y: -56
+      width: 122
+      height: 197
+  - scriptName: finish
+    position:
+      serializedVersion: 2
+      x: 610
+      y: 35
+      width: 77
+      height: 77

@@ -29,5 +29,4 @@
 @minigame finish
 Было близко... Эх.. В следующий раз повезёт.
 @hidePrinter 
-@goto finish
 @stop

@@ -29,4 +29,5 @@ wise_man: Отлично! Теперь ожерелье у меня!
 До новых встреч, игрок!
 @endIf
 @hidePrinter 
+@goto finish
 @stop

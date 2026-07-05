@@ -167,16 +167,13 @@ MonoBehaviour:
       guid: 735d6aa767879aa469134858c5b2f0a7
   - Id: Scripts
     Resources:
-    - name: prologue
+    - name: Prologue
       pathPrefix: Scripts
       guid: 4c4a6f34da18e874da0c34359299e2c0
-    - name: NewScript
-      pathPrefix: Scripts
-      guid: aaa8cb8a0dd43714db3be84e898c5e01
-    - name: LocationStreet
+    - name: village
       pathPrefix: Scripts
       guid: 2d9e9a753ae195046acade15841f42f3
-    - name: LocationCastleHall
+    - name: castle_hall
       pathPrefix: Scripts
       guid: a50185bd01d345a469f94c6e44db4f06
     - name: altar
@@ -204,4 +201,7 @@ MonoBehaviour:
   - Id: Movies
     Resources: []
   - Id: Audio
-    Resources: []
+    Resources:
+    - name: village
+      pathPrefix: Audio
+      guid: b6c91d5cd12762545810ac24f7854a2e

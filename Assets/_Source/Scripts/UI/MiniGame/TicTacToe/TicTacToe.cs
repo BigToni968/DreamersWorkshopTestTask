@@ -1,7 +1,6 @@
 using TestTask.ReadOnly;
 using UnityEngine.UI;
 using UnityEngine;
-using Naninovel;
 
 namespace TestTask.UI.MiniGame
 {
@@ -10,7 +9,7 @@ namespace TestTask.UI.MiniGame
         Player,
         Bot
     }
-    
+
     public class TicTacToe : MonoBehaviour
     {
         [SerializeField] private TicTacToeData data;
@@ -19,24 +18,24 @@ namespace TestTask.UI.MiniGame
         [SerializeField] private Button closeButton;
 
         public Vector2Int Size => data.Size;
-        
+
         private TicTacToeCell[,] _cells;
         private MiniGameService _gameService;
 
-        private void Start()
+        public void Init(MiniGameService gameService)
         {
             closeButton.onClick.AddListener(Close);
-            _gameService = Engine.GetService<MiniGameService>();
-            _cells = new TicTacToeCell[data.Size.y,data.Size.x];
+            _gameService = gameService;
+            _cells = new TicTacToeCell[data.Size.y, data.Size.x];
 
             for (var y = 0; y < data.Size.y; y++)
             {
                 for (var x = 0; x < data.Size.x; x++)
                 {
-                    var pos = new Vector2Int(x,y);
-                    var cell = Instantiate(data.CellPrefab, content);
-                    cell.CellButton.onClick.AddListener(() => TouchCell(pos,User.Player));
-                    _cells[y, x] = cell;
+                    var posInit = new Vector2Int(x, y);
+                    var cellInit = Instantiate(data.CellPrefab, content);
+                    cellInit.CellButton.onClick.AddListener(() => TouchCell(posInit, User.Player));
+                    _cells[y, x] = cellInit;
                 }
             }
         }

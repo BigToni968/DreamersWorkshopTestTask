@@ -24,11 +24,11 @@ MonoBehaviour:
   StableIdentification: 0
   InitializationScript: 
   TitleScript: 
-  StartGameScript: 
+  StartGameScript: Prologue
   AutoAddScripts: 1
   HotReloadScripts: 1
   WatchScripts: 1
-  WatchedDirectory: 
+  WatchedDirectory: Assets/_Source/naninovel
   CountTotalCommands: 0
   ShowScriptNavigator: 0
   EnableVisualEditor: 1
